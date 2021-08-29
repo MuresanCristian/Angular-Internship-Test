@@ -1,0 +1,16 @@
+<div *ngIf="country" [routerLink]="'/' + country.name">
+    <img [src] = "country.flag">
+    <h3> {{country.name}} </h3>
+    <p>
+        <strong>Capital: </strong>
+        {{country.capital}}
+    </p>
+    <p>
+        <strong>Region: </strong>
+        {{country.region}}
+    </p>
+    <p>
+        <strong>Population: </strong>
+        {{country.population | number : "1.0" }}
+    </p>
+</div>
